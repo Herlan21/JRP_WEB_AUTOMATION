@@ -1,0 +1,108 @@
+package AutomationWEBSITE_JIP.page;
+
+
+import AutomationWEBSITE_JIP.BaseTest;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+
+public class LoginPage extends BaseTest {
+
+    private WebDriver driver;
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+//**LOGIN LOCATOR**//
+//login form locator
+    By emailForm = By.id("login_username");
+    By passwordForm = By.id("login_password");
+    By loginButton = By.xpath("//button[.//span[normalize-space()='Sign In']]");
+
+//login form validation
+   By welcomeWordingCms = By.xpath("//h1[@class='text-5xl lg:text-6xl font-bold leading-tight text-slate-800']");
+   By inputUsernameAlert = By.xpath("//div[contains(text(),'Please input your username!')]");
+   By inputPasswordAlert = By.xpath("//div[contains(text(),'Please input your password!')]");
+//   By wrongCredAlert =  By.xpath("//div[@class='ant-notification-notice ant-notification-notice-error ant-notification-notice-closable']");
+   By wrongCredAlert = By.xpath("//div[contains(@class,'ant-notification-notice-error')]");
+
+//**LOGIN METHOD ACTION**//
+//Login page validation
+    public void validateLoginPage(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(emailForm)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordForm)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(welcomeWordingCms)).isDisplayed();
+    }
+
+    public void validateAlertLoginPage(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(inputUsernameAlert)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(inputPasswordAlert)).isDisplayed();
+    }
+
+    public boolean isElementDisplayed(By locator) {
+        try {
+            return driver.findElement(locator).isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+    // ===== EMPTY FIELD ALERT (INLINE) =====
+    public void validateInlineAlertForEmptyField(String username, String password) {
+
+        if (username.isEmpty()) {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(inputUsernameAlert));
+            Assert.assertTrue(isElementDisplayed(inputUsernameAlert),
+                    "Username inline alert should be displayed");
+        }
+
+        if (password.isEmpty()) {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(inputPasswordAlert));
+            Assert.assertTrue(isElementDisplayed(inputPasswordAlert),
+                    "Password inline alert should be displayed");
+        }
+
+        // Pastikan TIDAK ada push notification
+        Assert.assertFalse(
+                isElementDisplayed(wrongCredAlert),
+                "Wrong credential notification should NOT be displayed"
+        );
+    }
+
+public void validateWrongCredentialAlert() {
+    try {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(wrongCredAlert));
+        Assert.assertTrue(
+                isElementDisplayed(wrongCredAlert),
+                "Expected wrong credential notification to be displayed"
+        );
+    } catch (TimeoutException e) {
+        Assert.fail("Wrong credential notification did NOT appear");
+    }
+}
+
+//Login form action method
+    public void inputUsername(String username){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(emailForm)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(emailForm)).sendKeys(username);
+    }
+
+    public void inputPassword(String password){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordForm)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordForm)).sendKeys(password);
+    }
+
+    public void clickLoginButton(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton)).click();
+    }
+
+    public void triggerEmptyPasswordValidation() {
+        WebElement password = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(passwordForm)
+        );
+        password.click();
+        password.sendKeys("a");
+        password.sendKeys(Keys.BACK_SPACE); // sekarang kosong tapi "touched"
+    }
+}

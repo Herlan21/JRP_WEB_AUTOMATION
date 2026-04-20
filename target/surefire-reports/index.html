@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 8 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid credentials&quot;, &quot;Login with valid credentials&quot;)">runScenario("Login with valid credentials", "Login with valid credentials")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">runScenario("login with invalid credentials", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Transfer successfully between user&quot;, &quot;Transfer between user&quot;)">runScenario("Transfer successfully between user", "Transfer between user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">runScenario("login with invalid credentials", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check remaining balance&quot;, &quot;Check remaining balance&quot;)">runScenario("Check remaining balance", "Check remaining balance")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">runScenario("login with invalid credentials", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">runScenario("login with invalid credentials", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="AutomationMobileBrainboost.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">runScenario("login with invalid credentials", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AutomationMobileBrainboost.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with valid credentials&quot;, &quot;Login with valid credentials&quot;)">
+                  </a> <!-- runScenario("Login with valid credentials", "Login with valid credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with valid credentials","Login with valid credentials")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;Skip&quot;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+	at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+	at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginSuccess.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("login with invalid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with invalid credentials","Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.EditText[contains(@hint, &apos;Password&apos;)]
+ (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.LoginPage.inputPassword(LoginPage.java:51)
+	at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userInputPasswordWithPassword(LoginSteps.java:49)
+	at ✽.user click form and input password with &quot;password&quot;(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:8)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Transfer successfully between user&quot;, &quot;Transfer between user&quot;)">
+                  </a> <!-- runScenario("Transfer successfully between user", "Transfer between user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Transfer successfully between user","Transfer between user")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by AppiumBy.accessibilityId: Tombol Transfer antar BCA (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.HomePage.clickTransferButton(HomePage.java:90)
+	at AutomationMobileBrainboost.StepDefinitions.HomeSteps.userIsOnTheTransferAntarBCAScreen(HomeSteps.java:43)
+	at ✽.User is on the Transfer Antar BCA screen(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/transfer.feature:3)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("login with invalid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with invalid credentials","Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;Skip&quot;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+	at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+	at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check remaining balance&quot;, &quot;Check remaining balance&quot;)">
+                  </a> <!-- runScenario("Check remaining balance", "Check remaining balance") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check remaining balance","Check remaining balance")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;user click masuk button&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user click masuk button&quot;)
+public void user_click_masuk_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user input username with {string}&quot;)
+public void user_input_username_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user input password with {string}&quot;)
+public void user_input_password_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user sees remaining own balance in their account&quot;)
+public void user_sees_remaining_own_balance_in_their_account() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("login with invalid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with invalid credentials","Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;Skip&quot;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+	at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+	at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("login with invalid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with invalid credentials","Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;Skip&quot;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+	at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+	at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with invalid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("login with invalid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with invalid credentials","Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;Skip&quot;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.7.4&apos;, java.version: &apos;23-valhalla&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+	at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+	at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AutomationMobileBrainboost.TestRunner&quot;/&gt;
+      &lt;class name=&quot;AutomationMobileBrainboost.BaseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(0, 3, 24934);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(1, 3, 15670);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(2, 3, 15574);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(3, 3, 15563);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(4, 3, 15546);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(5, 3, 15235);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(6, 3, 15198);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'AutomationMobileBrainboost.TestRunner')
+data.setCell(7, 3, 188);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationMobileBrainboost.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@71adfedd)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check remaining balance", "Check remaining balance")</span>
+                <span class="method-start">16900 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("login with invalid credentials", "Login")</span>
+                <span class="method-start">17091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("login with invalid credentials", "Login")</span>
+                <span class="method-start">32290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("login with invalid credentials", "Login")</span>
+                <span class="method-start">57225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("login with invalid credentials", "Login")</span>
+                <span class="method-start">72461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("login with invalid credentials", "Login")</span>
+                <span class="method-start">88008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with valid credentials", "Login with valid credentials")</span>
+                <span class="method-start">103680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Transfer successfully between user", "Transfer between user")</span>
+                <span class="method-start">119256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">134821 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

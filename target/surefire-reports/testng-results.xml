@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="0" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-08T11:03:16 WIB" name="Surefire suite" finished-at="2025-10-08T11:05:32 WIB" duration-ms="135563">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-08T11:03:16 WIB" name="Surefire test" finished-at="2025-10-08T11:05:32 WIB" duration-ms="135563">
+      <class name="AutomationMobileBrainboost.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:03:16 WIB" name="setUpClass" finished-at="2025-10-08T11:03:33 WIB" duration-ms="16889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@71adfedd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:03:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:03:33 WIB" duration-ms="188" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check remaining balance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Check remaining balance"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user click masuk button' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user click masuk button")
+public void user_click_masuk_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user input username with {string}")
+public void user_input_username_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user input password with {string}")
+public void user_input_password_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user sees remaining own balance in their account")
+public void user_sees_remaining_own_balance_in_their_account() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user click masuk button' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user click masuk button")
+public void user_click_masuk_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user input username with {string}")
+public void user_input_username_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user input password with {string}")
+public void user_input_password_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user sees remaining own balance in their account")
+public void user_sees_remaining_own_balance_in_their_account() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:03:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:03:48 WIB" duration-ms="15198" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:03:48 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:04:13 WIB" duration-ms="24934" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.EditText[contains(@hint, 'Password')]
+ (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.EditText[contains(@hint, 'Password')]
+ (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.LoginPage.inputPassword(LoginPage.java:51)
+at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userInputPasswordWithPassword(LoginSteps.java:49)
+at ✽.user click form and input password with "password"(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:04:13 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:04:29 WIB" duration-ms="15235" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:04:29 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:04:44 WIB" duration-ms="15546" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:04:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:05:00 WIB" duration-ms="15670" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginFailed.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:05:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:05:15 WIB" duration-ms="15574" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Skip"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.LoginPage.clickSkipButton(LoginPage.java:61)
+at AutomationMobileBrainboost.StepDefinitions.LoginSteps.userIsLaunchTheAppBrainboost(LoginSteps.java:31)
+at ✽.user is launch the app, then if skip button is displayed, click skip button(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/loginSuccess.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:05:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-08T11:05:31 WIB" duration-ms="15563" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Transfer successfully between user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Transfer between user"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by AppiumBy.accessibilityId: Tombol Transfer antar BCA (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by AppiumBy.accessibilityId: Tombol Transfer antar BCA (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.7.4', java.version: '23-valhalla'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/herlan/Downloads/3.0..., appium:appActivity: com.brainboost.android.Main..., appium:appPackage: com.brainboost.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/herlan/Downloads/3.0..., appActivity: com.brainboost.android.Main..., appPackage: com.brainboost.android, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: Pixel Tablet, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2271e025-bf92-4b31-9d23-e10ab0222b00
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AutomationMobileBrainboost.page.HomePage.clickTransferButton(HomePage.java:90)
+at AutomationMobileBrainboost.StepDefinitions.HomeSteps.userIsOnTheTransferAntarBCAScreen(HomeSteps.java:43)
+at ✽.User is on the Transfer Antar BCA screen(file:///Users/herlan/Documents/AUTOMATION%20/qa_automation_mobile/src/test/resources/features/transfer.feature:3)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:AutomationMobileBrainboost.TestRunner@2aa5fe93]" started-at="2025-10-08T11:05:31 WIB" name="tearDownClass" finished-at="2025-10-08T11:05:32 WIB" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- AutomationMobileBrainboost.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
