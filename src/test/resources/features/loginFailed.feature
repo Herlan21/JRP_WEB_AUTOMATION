@@ -10,10 +10,10 @@ Feature: Login - Negative Case
 
     Examples:
       | username        | password          |
-      | wrongadmin      | wrongpassword     |
+      | adminsuper      | password12345     |
       | admin           | wrongpassword     |
       | wrongadmin      | password          |
-      | admin           |                  |
+      | superadmin2     |                   |
       |                 | password          |
 
 
